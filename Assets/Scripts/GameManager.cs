@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public Transform enemyPaddle;
     public BallController ball;
 
+    public int playerScore = 0;
+    public int enemyScore = 0;
+
     private void Start()
     {
         ResetGame();
