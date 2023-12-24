@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private Vector2 _initialVelocity = new Vector2(5, 5);
+    [SerializeField] private Vector2 _initialVelocity = new Vector2(5, 5);
 
     public void ResetBall()
     {
