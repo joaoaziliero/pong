@@ -15,9 +15,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textPointsPlayer;
     public TextMeshProUGUI textPointsEnemy;
 
+    public int winPoints;
+
     private void Start()
     {
         ResetGame();
+    }
+
+    private void Update()
+    {
+        CheckWin();
     }
 
     public void ResetGame()
@@ -43,5 +50,13 @@ public class GameManager : MonoBehaviour
     {
         enemyScore++;
         textPointsEnemy.text = enemyScore.ToString();
+    }
+
+    public void CheckWin()
+    {
+        if(playerScore == winPoints || enemyScore == winPoints)
+        {
+            ResetGame();
+        }
     }
 }
