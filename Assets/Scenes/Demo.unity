@@ -1002,7 +1002,7 @@ MonoBehaviour:
   enemyScore: 0
   textPointsPlayer: {fileID: 1366170828}
   textPointsEnemy: {fileID: 307454928}
-  winPoints: 15
+  winPoints: 5
 --- !u!4 &1248720739
 Transform:
   m_ObjectHideFlags: 0
